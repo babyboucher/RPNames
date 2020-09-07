@@ -13,6 +13,9 @@ namespace RPNames
         [Description("Is the plugin enabled?")]
         public bool IsEnabled { get; set; } = true;
 
+        [Description("Should people lose nick when made into a tutorial?")]
+        public bool TutorialNick { get; set; } = true;
+
         [Description("Should Class-D be D-#### (true) or should it follow the other names with Title + Name (false)?")]
         public bool DboisSetting { get; set; } = true;
 
