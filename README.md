@@ -5,6 +5,7 @@
 Name | Description
 --- | ---
 Is_Enabled | Is the plugin enabled
+Tutorial_Nick | If a player gets turned into a Tutorial should they lose nick
 dbois_setting | If true, then Dbois spawn with there name being D-#### (# = any number), if false then they act like any other human class
 s_c_p_setting | If true, then SCPs will be named accourding to s_c_p_names, if false then all SCPs will have names like Dbois
 death_reset | If true, then when a player dies, there name goes back to normal, if false then they will not lose their name on death
