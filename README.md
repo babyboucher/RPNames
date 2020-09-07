@@ -15,6 +15,8 @@ human_names | This is a list of all possable names, leave blank to use inbuilt n
 ## Custom names
 If you would like to put your own list of names it should look something like this
 human_names
+"
  - Name
  - AnotherName
  - Etc
+ "
