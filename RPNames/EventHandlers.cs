@@ -53,7 +53,7 @@
                 }
                 
             }
-            if (ev.NewRole == RoleType.Tutorial)
+            if (ev.NewRole == RoleType.Tutorial || ev.NewRole == RoleType.Spectator)
             {
                 if (plugin.Config.TutorialNick)
                 {
