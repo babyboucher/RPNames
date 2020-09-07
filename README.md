@@ -1,2 +1,20 @@
 # RPNames
  Gives each class Roleplay names when they spawn in
+
+## Configs
+Name | Description
+--- | ---
+Is_Enabled | Is the plugin enabled
+dbois_setting | If true, then Dbois spawn with there name being D-#### (# = any number), if false then they act like any other human class
+s_c_p_setting | If true, then SCPs will be named accourding to s_c_p_names, if false then all SCPs will have names like Dbois
+death_reset | If true, then when a player dies, there name goes back to normal, if false then they will not lose their name on death
+class_titles: | A list of human classes and what the title should be
+s_c_p_names | A list of SCP classes and what they should be named
+human_names | This is a list of all possable names, leave blank to use inbuilt names. If you want to use your own set look bellow
+
+## Custom names
+If you would like to put your own list of names it should look something like this
+human_names
+ - Name
+ - AnotherName
+ - Etc
