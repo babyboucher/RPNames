@@ -13,7 +13,7 @@
         Random random = new Random();
         public void OnPlayerChangeRole(ChangingRoleEventArgs ev)
         {
-            if (plugin.NickNames.Count < 1)
+            if (plugin.NickNames.Count == 0)
             {
                 Refreshnames();
             }
