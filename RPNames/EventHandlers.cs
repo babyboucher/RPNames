@@ -20,7 +20,7 @@
             if (plugin.Config.ClassTitles.ContainsKey(ev.NewRole.ToString()))
             { 
                 int RandomNameNumber = random.Next(1, plugin.NickNames.Count-1);
-                plugin.NickNames.RemoveAt(RandomNameNumber);
+                //plugin.NickNames.RemoveAt(RandomNameNumber);
                 ev.Player.DisplayNickname = plugin.Config.ClassTitles[ev.NewRole.ToString()] + plugin.NickNames[(RandomNameNumber)];
             }
             if (plugin.Config.SCPSetting )
@@ -35,7 +35,7 @@
                 if (!plugin.Config.DboisSetting)
                 {
                     int RandomNameNumber = random.Next(1, plugin.NickNames.Count - 1);
-                    plugin.NickNames.RemoveAt(RandomNameNumber);
+                    //plugin.NickNames.RemoveAt(RandomNameNumber);
                     ev.Player.DisplayNickname = plugin.Config.ClassTitles[ev.NewRole.ToString()] + plugin.NickNames[RandomNameNumber];
                 }
                 else
