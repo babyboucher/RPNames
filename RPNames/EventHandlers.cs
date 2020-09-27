@@ -60,6 +60,11 @@
                     ev.Player.DisplayNickname = null;
                 }
             }
+            if(plugin.Config.ShowNick)
+            {
+                ev.Player.Broadcast(10, String.Format("You are ", ev.Player.DisplayNickname));
+            }
+
         }
         public void OnPlayerDeath(DiedEventArgs ev)
         {

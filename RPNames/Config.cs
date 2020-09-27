@@ -25,6 +25,9 @@ namespace RPNames
         [Description("Should nicknames reset on death?")]
         public bool DeathReset { get; set; } = false;
 
+        [Description("Should a player be told their nickname?")]
+        public bool ShowNick { get; set; } = true;
+
         [Description("A dictionary with non SCP classes and their title")]
         public Dictionary<string, string> ClassTitles { get; set; } = new Dictionary<string, string>
         {
