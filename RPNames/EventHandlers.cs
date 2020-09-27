@@ -62,7 +62,7 @@
             }
             if(plugin.Config.ShowNick)
             {
-                ev.Player.Broadcast(10, String.Format("You are ", ev.Player.DisplayNickname));
+                ev.Player.Broadcast(10, String.Format($"You are {ev.Player.DisplayNickname}"));
             }
 
         }
