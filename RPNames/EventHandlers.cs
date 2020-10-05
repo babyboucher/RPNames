@@ -3,7 +3,9 @@
     using Exiled.API.Features;
     using Exiled.Events.EventArgs;
     using System;
+    using Hints;
     using System.Collections.Generic;
+    using MEC;
 
     public class EventHandlers
     {
@@ -62,7 +64,8 @@
             }
             if(plugin.Config.ShowNick)
             {
-                ev.Player.Broadcast(10, String.Format($"You are {ev.Player.DisplayNickname}"));
+                ev.Player.ReferenceHub.hints.Show(new TextHint($"{ev.Player.DisplayNickname}", new HintParameter[]
+                { new StringHintParameter("") }, HintEffectPresets.FadeInAndOut(15f, 1f, 15f), 10f));
             }
 
         }
@@ -73,6 +76,7 @@
                 ev.Target.DisplayNickname = null;
             }
         }
+
 
         public void Refreshnames()
         {
