@@ -25,25 +25,26 @@
                 //plugin.NickNames.RemoveAt(RandomNameNumber);
                 ev.Player.DisplayNickname = plugin.Config.ClassTitles[ev.NewRole.ToString()] + plugin.NickNames[(RandomNameNumber)];
             }
-            if (plugin.Config.SCPSetting )
+            if (plugin.Config.SCPNames.ContainsKey(ev.NewRole.ToString()))
             {
-                if (plugin.Config.SCPNames.ContainsKey(ev.NewRole.ToString()))
+                if (plugin.Config.SCPSetting)
                 {
+
                     ev.Player.DisplayNickname = plugin.Config.SCPNames[ev.NewRole.ToString()];
-                }
-            }
-            else
-            {
-                if (!plugin.Config.DboisSetting)
-                {
-                    int RandomNameNumber = random.Next(1, plugin.NickNames.Count - 1);
-                    //plugin.NickNames.RemoveAt(RandomNameNumber);
-                    ev.Player.DisplayNickname = plugin.Config.ClassTitles[ev.NewRole.ToString()] + plugin.NickNames[RandomNameNumber];
                 }
                 else
                 {
-                    int DclassNumber = random.Next(1000, 9999);
-                    ev.Player.DisplayNickname = ("D-" + DclassNumber.ToString());
+                    if (!plugin.Config.DboisSetting)
+                    {
+                        int RandomNameNumber = random.Next(1, plugin.NickNames.Count - 1);
+                        //plugin.NickNames.RemoveAt(RandomNameNumber);
+                        ev.Player.DisplayNickname = plugin.Config.ClassTitles[ev.NewRole.ToString()] + plugin.NickNames[RandomNameNumber];
+                    }
+                    else
+                    {
+                        int DclassNumber = random.Next(1000, 9999);
+                        ev.Player.DisplayNickname = ("D-" + DclassNumber.ToString());
+                    }
                 }
             }
             if (ev.NewRole == RoleType.ClassD)
