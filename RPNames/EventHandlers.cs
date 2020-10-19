@@ -56,6 +56,7 @@
                 }
                 
             }
+
             if (ev.NewRole == RoleType.Tutorial || ev.NewRole == RoleType.Spectator)
             {
                 if (plugin.Config.TutorialNick)
@@ -66,9 +67,20 @@
             if(plugin.Config.ShowNick)
             {
                 ev.Player.ReferenceHub.hints.Show(new TextHint($"{ev.Player.DisplayNickname}", new HintParameter[]
-                { new StringHintParameter("") }, HintEffectPresets.FadeInAndOut(15f, 1f, 15f), 10f));
+                { new StringHintParameter("") }, HintEffectPresets.FadeInAndOut(15f, 1f, 15f), 15f));
             }
 
+            if (plugin.Config.ShowRealName)
+            {
+                if (ev.Player.DisplayNickname == null)
+                { 
+                
+                }
+                else
+                {
+                    ev.Player.DisplayNickname = $"{ev.Player.DisplayNickname} ({ev.Player.Nickname})";
+                }
+            }
         }
         public void OnPlayerDeath(DiedEventArgs ev)
         {

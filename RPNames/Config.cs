@@ -28,6 +28,9 @@ namespace RPNames
         [Description("Should a player be told their nickname?")]
         public bool ShowNick { get; set; } = true;
 
+        [Description("Should a player have there real name after their nickname?")]
+        public bool ShowRealName { get; set; } = false;
+
         [Description("A dictionary with non SCP classes and their title")]
         public Dictionary<string, string> ClassTitles { get; set; } = new Dictionary<string, string>
         {
