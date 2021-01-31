@@ -31,63 +31,59 @@ namespace RPNames
         [Description("Should a player have there real name after their nickname?")]
         public bool ShowRealName { get; set; } = false;
 
-        [Description("A dictionary with non SCP classes and their title")]
-        public Dictionary<string, string> ClassTitles { get; set; } = new Dictionary<string, string>
+        [Description("A dictionary with classes and their title")]
+        public Dictionary<RoleType, string> ClassTitles { get; set; } = new Dictionary<RoleType, string>
         {
             {
-                "ClassD", "D-"
+                RoleType.ClassD, "D-"
             },
             {
-                "Scientist", "Dr."
+                RoleType.Scientist, "Dr."
             },
             {
-                "FacilityGuard", "Security Officer "
+                RoleType.FacilityGuard, "Security Officer "
             },
             {
-                "NtfCommander", "Commander "
+                RoleType.NtfCommander, "Commander "
             },
             {
-                "NtfCadet", "Cadet "
+                RoleType.NtfCadet, "Cadet "
             },
             {
-                "NtfLieutenant", "Lieutenant "
+                RoleType.NtfLieutenant, "Lieutenant "
             },
             {
-                "NtfScientist", "Field Agent "
+                RoleType.NtfScientist, "Field Agent "
             },
             {
-                "ChaosInsurgency", "Agent of Chaos "
+                RoleType.ChaosInsurgency, "Agent of Chaos "
+            },
+            {
+                RoleType.Scp049, "SCP-049 "
+            },
+            {
+                RoleType.Scp0492, "SCP-049-2 "
+            },
+            {
+                RoleType.Scp079, "SCP-079 "
+            },
+            {
+                RoleType.Scp096, "SCP-096 "
+            },
+            {
+                RoleType.Scp106, "SCP-106 "
+            },
+            {
+                RoleType.Scp173, "SCP-173 "
+            },
+            {
+                RoleType.Scp93953, "SCP-939-53 "
+            },
+            {
+                RoleType.Scp93989, "SCP-939-89 "
             },
         };
 
-        [Description("A dictionary with SCPs and their title")]
-        public Dictionary<string, string> SCPNames { get; set; } = new Dictionary<string, string>
-        {
-            {
-                "Scp049", "SCP-049"
-            },
-            {
-                "Scp0492", "SCP-049-2"
-            },
-            {
-                "Scp079", "SCP-079 "
-            },
-            {
-                "Scp096", "SCP-096"
-            },
-            {
-                "Scp106", "SCP-106"
-            },
-            {
-                "Scp173", "SCP-173"
-            },
-            {
-                "Scp93953", "SCP-939-53 "
-            },
-            {
-                "Scp93989", "SCP-939-89"
-            },
-        };
         [Description("The list of names to be given. (Leave empty for default, if you want to make your own list, look at readme) ")]
         public List<string> HumanNames { get; set; } = new List<string> { };
     }
