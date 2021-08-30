@@ -44,19 +44,19 @@ namespace RPNames
                 RoleType.FacilityGuard, "Security Officer "
             },
             {
-                RoleType.NtfCommander, "Commander "
+                RoleType.NtfCaptain, "Commander "
             },
             {
-                RoleType.NtfCadet, "Cadet "
+                RoleType.NtfPrivate, "Cadet "
             },
             {
-                RoleType.NtfLieutenant, "Lieutenant "
+                RoleType.NtfSergeant, "Lieutenant "
             },
             {
-                RoleType.NtfScientist, "Field Agent "
+                RoleType.NtfSpecialist, "Field Agent "
             },
             {
-                RoleType.ChaosInsurgency, "Agent of Chaos "
+                RoleType.ChaosConscript, "Agent of Chaos "
             },
             {
                 RoleType.Scp049, "SCP-049 "

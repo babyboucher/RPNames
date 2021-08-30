@@ -13,11 +13,12 @@
         public EventHandlers(Plugin plugin) => this.plugin = plugin;
 
         Random random = new Random();
+
         public void OnPlayerChangeRole(ChangingRoleEventArgs ev)
         {
             //if (plugin.NickNames.Count == 0)
             //{
-                //Refreshnames();
+            //Refreshnames();
             //}
             if (ev.NewRole.GetTeam() != Team.SCP && plugin.Config.ClassTitles.ContainsKey(ev.NewRole))
             { 
