@@ -17,7 +17,7 @@ namespace RPNames
         public override string Name { get; } = "Rp Names";
         public override string Author { get; } = "Babyboucher20";
         public override Version Version { get; } = new Version(1, 7, 0);
-        public override Version RequiredExiledVersion { get; } = new Version(3, 0, 0);
+        public override Version RequiredExiledVersion { get; } = new Version(5, 0, 0);
         public override string Prefix { get; } = "RP Names";
 
         public EventHandlers.EventHandlers PlayerHandlers;
